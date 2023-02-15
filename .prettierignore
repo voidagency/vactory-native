@@ -1,0 +1,15 @@
+cache
+.cache
+.docusaurus
+package-lock.json
+yarn.lock
+static
+CHANGELOG.md
+.yarn
+dist
+android
+ios
+.runtime
+.expo
+node_modules
+.next

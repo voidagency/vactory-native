@@ -1,0 +1,13 @@
+node_modules
+__tests__/
+.vscode/
+.husky/
+android/
+coverage/
+ios/
+.runtime
+.expo
+.expo-shared
+docs/
+cli/
+.next

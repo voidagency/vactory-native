@@ -1,7 +1,18 @@
+const globals = require("globals")
+
 module.exports = {
-  extends: ["next", "turbo", "prettier"],
-  rules: {
-    "@next/next/no-html-link-for-pages": "off",
-    "react/jsx-key": "off",
-  },
-};
+	// Configuration for JavaScript files
+	extends: ["universe", "plugin:prettier/recommended", "plugin:react/recommended"],
+	plugins: ["unicorn", "prettier"],
+	parserOptions: {
+		ecmaVersion: "latest",
+		sourceType: "module",
+		ecmaFeatures: {
+			jsx: true,
+		},
+	},
+	rules: {
+		"prettier/prettier": "error",
+		"no-unused-vars": "error",
+	},
+}
