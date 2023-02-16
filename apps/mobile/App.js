@@ -1,7 +1,7 @@
 import React from "react"
-import { Paragraph, Strong } from "@vactory-native/ui"
-import { StatusBar } from "expo-status-bar"
 import { StyleSheet, View } from "react-native"
+import { StatusBar } from "expo-status-bar"
+import { Paragraph, Strong } from "@vactory-native/ui"
 
 export default function App() {
 	return (

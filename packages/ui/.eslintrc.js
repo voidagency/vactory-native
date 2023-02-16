@@ -5,6 +5,7 @@ module.exports = {
 			version: "18.0",
 		},
 	},
+	ignorePatterns: ["dist/*.js", "dist/*.mjs"],
 	rules: {
 		"unicorn/filename-case": [
 			"error",
