@@ -1,5 +1,14 @@
 {
-    "eslint.rules.customizations": [
-        { "rule": "*", "severity": "error" }
-      ]
+	"eslint.rules.customizations": [{ "rule": "*", "severity": "error" }],
+	"[markdown][javascript][typescript][typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
+	},
+	"[json][jsonc]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

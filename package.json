@@ -13,12 +13,14 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{js,jsx,md}\"",
-    "clean": "rm -rf node_modules",
+    "clean": "turbo run clean && rm -rf node_modules",
     "lint:packages:semver": "syncpack lint-semver-ranges --dev --prod --peer --semver-range='^'",
     "lint:packages:mismatches": "syncpack list-mismatches --dev --prod --peer",
     "changeset": "changeset add",
     "version-packages": "changeset version",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prerelease": "yarn run build",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
