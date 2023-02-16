@@ -1,9 +1,15 @@
 {
   "name": "@vactory/ui",
   "version": "0.0.0",
-  "main": "./index.jsx",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
+    "dev": "tsup index.jsx --format esm,cjs --watch --external react --external react-native",
+    "build": "tsup index.jsx --format esm,cjs --external react --external react-native",
     "lint": "eslint --ext .jsx --ext .js ."
   },
   "devDependencies": {
@@ -11,6 +17,12 @@
     "@types/react-dom": "^17.0.11",
     "eslint-config-custom": "*",
     "prettier-config-custom": "*",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "tsup": "^5.10.1"
+  },
+  "peerDependencies": {
+    "react": "18.1.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.70.5"
   }
 }
