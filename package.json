@@ -11,18 +11,29 @@
     "dev:mobile": "yarn workspace mobile dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "test": "turbo run test",
     "format": "prettier --write \"**/*.{js,jsx,md}\"",
-    "clean": "rm -rf node_modules"
+    "clean": "rm -rf node_modules",
+    "lint:packages:semver": "syncpack lint-semver-ranges --dev --prod --peer --semver-range='^'",
+    "lint:packages:mismatches": "syncpack list-mismatches --dev --prod --peer",
+    "changeset": "changeset add",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
-    "prettier-config-custom": "*",
     "prettier": "^2.8.4",
+    "prettier-config-custom": "*",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@commitlint/cli": "^17.4.3",
+    "@commitlint/config-conventional": "^17.4.3",
+    "husky": "^8.0.3",
+    "syncpack": "^9.0.2"
+  },
   "packageManager": "yarn@1.22.19"
 }
