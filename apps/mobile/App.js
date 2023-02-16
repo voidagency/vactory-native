@@ -1,5 +1,5 @@
 import React from "react"
-import { Paragraph, Strong } from "@vactory/ui"
+import { Paragraph, Strong } from "@vactory-native/ui"
 import { StatusBar } from "expo-status-bar"
 import { StyleSheet, View } from "react-native"
 

@@ -7,15 +7,18 @@
     "packages/*"
   ],
   "scripts": {
+    "dev": "turbo run dev",
     "dev:mobile": "yarn workspace mobile dev",
-    "lint": "yarn workspace @vactory/ui lint",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,jsx,md}\"",
     "clean": "rm -rf node_modules"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier-config-custom": "*",
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
