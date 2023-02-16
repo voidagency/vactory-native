@@ -17,7 +17,8 @@
     "lint:packages:semver": "syncpack lint-semver-ranges --dev --prod --peer --semver-range='^'",
     "lint:packages:mismatches": "syncpack list-mismatches --dev --prod --peer",
     "changeset": "changeset add",
-    "version-packages": "changeset version"
+    "version-packages": "changeset version",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
